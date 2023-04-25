@@ -1,5 +1,5 @@
-# Static Hosting using NGiNX
-Static hosting is pretty simple with NGiNX.
+# Static Hosting using NGINX
+Static hosting is pretty simple with NGINX.
 Run `docker compose up --build` and visit `http://localhost:8080`
 
 In case you get "Welcome to nginx" notice, try reloading the page and forcing refresh so that the browser fetches the non-cached content.
