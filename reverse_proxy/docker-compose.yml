@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  nginx:
+    image: 'nginx:latest'
+    ports:
+      - 8080:80 # local:container
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+  
+  hello:
+    build:
+      context: hello_backend
+      dockerfile: Dockerfile
+
+  bye:
+    build:
+      context: bye_backend
+      dockerfile: Dockerfile
